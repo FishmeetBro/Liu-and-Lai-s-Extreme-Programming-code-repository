@@ -9,23 +9,6 @@ Spring Boot: Backend framework for efficient development.
 MySQL: Database to store user and address book data.
 Spring Security + JWT: For user authentication and role-based access control.
 
-## Backend Directory Structure
-
-.idea/                  # IDE configuration files
-files/                  # Temporary files for import/export
-src/
-├── component/          # Shared components, e.g., WebSocket services
-├── config/             # Configuration files (e.g., security, app settings)
-├── controller/         # Controllers handling API requests
-├── entity/             # Entity classes for database mapping
-├── exception/          # Exception handling module
-├── mapper/             # Data access layer (DAOs)
-├── service/            # Service layer for business logic
-├── utils/              # Utility classes for common functionalities
-target/                 # Compiled files (not version-controlled)
-pom.xml                 # Maven project configuration
-address_springboot.iml  # IDE project configuration
-
 ## Features
 
 1. User Module
@@ -47,3 +30,21 @@ Favorite Contacts: Mark important contacts as favorites for easy access.
 Import/Export:
 Export: Download the address book data into an Excel file, with each contact in a row and attributes in separate columns.
 Import: Bulk upload contacts from an Excel file into the address book.
+
+## Backend Directory Structure
+
+```plaintext
+.idea/                  # IDE configuration files
+files/                  # Temporary files used for import/export
+src/                    # Main source code directory
+├── component/          # Shared components, e.g., WebSocket services
+├── config/             # Configuration files for security and app settings
+├── controller/         # API controllers that handle client requests
+├── entity/             # Entity classes mapping to database tables
+├── exception/          # Global exception handling
+├── mapper/             # Data Access Objects (DAOs) for database interactions
+├── service/            # Business logic and services
+├── utils/              # Utility classes and helper functions
+target/                 # Compiled files (not included in version control)
+pom.xml                 # Maven project configuration file
+address_springboot.iml  # Project configuration for IntelliJ IDEA
